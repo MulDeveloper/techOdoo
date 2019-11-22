@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <act_window id="tech_ordenadores_action" name="ordenadores"
+                     res_model="tech.ordenadores" />
+
+         <menuitem name="ordenadores" id="menu_ordenadores" action="tech_ordenadores_action" parent="menu_inicio" sequence="17"/>
+
+
+        <record id="tech_ordenadores_view_tree" model="ir.ui.view">
+            <field name="name">Lista Ordenadores</field>
+            <field name="model">tech.ordenadores</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="modelo" />
+                    <field name="marca" />
+                    <field name="pulgadas" />
+                    <field name="precio" />
+                    <field name="procesador" />
+                    <field name="ram" />
+                    <field name="discoDuro" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="tech_ordenadores_view_form" model="ir.ui.view">
+            <field name="name">Formulario de ordenadores</field>
+            <field name="model">guitars.paises</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="codigo" />
+                        <field name="nombre" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="guitars_paises_view_search" model="ir.ui.view">
+            <field name="name">Busqueda amplificadores</field>
+            <field name="model">guitars.paises</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="codigo" />
+                    <field name="nombre" />
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>

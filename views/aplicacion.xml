@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <act_window id="tech_aplicaciones_action" name="aplicaciones"
+                     res_model="tech.aplicaciones" />
+
+         <menuitem name="aplicaciones" id="menu_aplicaciones" action="tech_aplicaciones_action" parent="menu_inicio" sequence="17"/>
+
+
+        <record id="tech_aplicaciones_view_tree" model="ir.ui.view">
+            <field name="name">Lista Aplicaciones</field>
+            <field name="model">tech.aplicaciones</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre" />
+                    <field name="cliente" />
+                    <field name="tipoApp" />
+                    <field name="costeDesarrollo" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="tech_aplicaciones_view_form" model="ir.ui.view">
+            <field name="name">Formulario de Apps</field>
+            <field name="model">tech.aplicaciones</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="nombre" />
+                        <field name="cliente" />
+                        <field name="tipoApp" />
+                        <field name="costeDesarrollo" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="tech_aplicaciones_view_search" model="ir.ui.view">
+            <field name="name">Busqueda Apps</field>
+            <field name="model">tech.aplicaciones</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="nombre" />
+                    <field name="cliente" />
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>

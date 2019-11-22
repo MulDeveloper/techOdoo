@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <act_window id="tech_moviles_action" name="moviles"
+                     res_model="tech.moviles" />
+
+
+        <record id="tech_moviles_view_tree" model="ir.ui.view">
+            <field name="name">Lista moviles</field>
+            <field name="model">moviles.moviles</field>
+            <field name="arch" type="xml">
+
+                <tree>
+                    <field name="modelo" />
+                    <field name="marca" />
+                    <field name="pulgadas" />
+                    <field name="precio" />
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="tech_moviles_view_form" model="ir.ui.view">
+            <field name="name">Formulario de moviles</field>
+            <field name="model">moviles.moviles</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="limpiar" type="object" string="Limpia" class="oe_highlight" />
+                        <button name="limpia_todo" type="object" string="Limpia todo" class="oe_highlight" />
+
+
+                    </header>
+                    <group>
+                        <field name="modelo" />
+                        <field name="marca" />
+                        <field name="pulgadas" />
+                        <field name="precio" />
+
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="tech_moviles_view_search" model="ir.ui.view">
+            <field name="name">Busqueda moviles</field>
+            <field name="model">moviles.moviles</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="modelo" />
+                    <field name="marca" />
+                    <field name="pulgadas" />
+                    <field name="precio" />
+
+                </search>
+            </field>
+        </record>
+        <menuitem name="Tech" id="menu_tech" sequence="10" />
+        <menuitem name="Inicio" id="menu_inicio" parent="menu_tech" sequence="10"/>
+        <menuitem name="Moviles" id="menu_moviles" action="tech_moviles_action" parent="menu_inicio" sequence="10"/>
+
+    </data>
+</odoo>

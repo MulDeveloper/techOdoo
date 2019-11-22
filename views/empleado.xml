@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <act_window id="tech_empleados_action" name="empleados"
+                     res_model="tech.empleados" />
+
+         <menuitem name="empleados" id="menu_empleados" action="tech_empleados_action" parent="menu_inicio" sequence="17"/>
+
+
+        <record id="tech_empleados_view_tree" model="ir.ui.view">
+            <field name="name">Lista Empleados</field>
+            <field name="model">tech.empleados</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="cod" />
+                    <field name="nombre" />
+                    <field name="apellido" />
+                    <field name="puesto" />
+                    <field name="sueldo" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="tech_empleados_view_form" model="ir.ui.view">
+            <field name="name">Formulario de Empleados</field>
+            <field name="model">tech.empleados</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="cod" />
+                        <field name="nombre" />
+                        <field name="apellido" />
+                        <field name="puesto" />
+                        <field name="sueldo" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="tech_empleados_view_search" model="ir.ui.view">
+            <field name="name">Busqueda Empleados</field>
+            <field name="model">tech.empleados</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="cod" />
+                    <field name="nombre" />
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>

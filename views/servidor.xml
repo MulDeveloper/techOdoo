@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <act_window id="tech_servidores_action" name="servidores"
+                     res_model="tech.servidores" />
+
+         <menuitem name="servidores" id="menu_servidores" action="tech_servidores_action" parent="menu_inicio" sequence="17"/>
+
+
+        <record id="tech_servidores_view_tree" model="ir.ui.view">
+            <field name="name">Lista Servidores</field>
+            <field name="model">tech.servidores</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="modelo" />
+                    <field name="marca" />
+                    <field name="tipoServidor" />
+                    <field name="precioAlquiler" />
+                    <field name="procesadores" />
+                    <field name="ram" />
+                    <field name="discosDuros" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="tech_servidores_view_form" model="ir.ui.view">
+            <field name="name">Formulario de servidores</field>
+            <field name="model">tech.servidores</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="modelo" />
+                        <field name="marca" />
+                        <field name="tipoServidor" />
+                        <field name="precioAlquiler" />
+                        <field name="procesadores" />
+                        <field name="ram" />
+                        <field name="discosDuros" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="tech_servidores_view_search" model="ir.ui.view">
+            <field name="name">Busqueda servidores</field>
+            <field name="model">tech.servidores</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="modelo" />
+                    <field name="marca" />
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>
