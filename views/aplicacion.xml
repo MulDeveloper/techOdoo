@@ -44,5 +44,7 @@
             </field>
         </record>
 
+        <menuitem name="Inicio" id="menu_inicio" sequence="10"/>
+
     </data>
 </odoo>
