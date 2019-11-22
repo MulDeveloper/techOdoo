@@ -9,12 +9,12 @@ class Movil(models.Model):
 
 
 @api.one  
-	def limpiar(self):
-		self.modelo = ""
-		return True
+def limpiar(self):
+	self.modelo = ""
+	return True
 
 @api.multi
-	def limpia_todo(self):
-		done_recs = self.search([('modelo', '=', 'fender')])
-		done_recs.write({'modelo': 'Fender'})
-		return True
+def limpia_todo(self):
+	done_recs = self.search([('modelo', '=', 'Galaxy M20')])
+	done_recs.write({'modelo': 'Galaxy'})
+	return True
