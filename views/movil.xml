@@ -7,7 +7,7 @@
 
         <record id="tech_moviles_view_tree" model="ir.ui.view">
             <field name="name">Lista moviles</field>
-            <field name="model">moviles.moviles</field>
+            <field name="model">tech.moviles</field>
             <field name="arch" type="xml">
 
                 <tree>
@@ -22,7 +22,7 @@
 
         <record id="tech_moviles_view_form" model="ir.ui.view">
             <field name="name">Formulario de moviles</field>
-            <field name="model">moviles.moviles</field>
+            <field name="model">tech.moviles</field>
             <field name="arch" type="xml">
                 <form>
                     <header>
