@@ -8,13 +8,10 @@ class Movil(models.Model):
 	precio = fields.Float('Precio', required=True)
 
 
-@api.one  
-def limpiar(self):
-	self.modelo = ""
-	return True
-
 @api.multi
-def limpia_todo(self):
-	done_recs = self.search([('modelo', '=', 'Galaxy M20')])
-	done_recs.write({'modelo': 'Galaxy'})
+def limpiar_campos(self):
+	self.modelo = ""
+	self.marca = ""
+	self.pulgadas = ""
+	self.precio = ""
 	return True

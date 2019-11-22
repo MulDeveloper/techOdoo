@@ -26,10 +26,7 @@
             <field name="arch" type="xml">
                 <form>
                     <header>
-                        <button name="limpiar" type="object" string="Limpia" class="oe_highlight" />
-                        <button name="limpia_todo" type="object" string="Limpia todo" class="oe_highlight" />
-
-
+                        <button name="limpia_campos" type="object" string="Limpia todo" class="oe_highlight" />
                     </header>
                     <group>
                         <field name="modelo" />
