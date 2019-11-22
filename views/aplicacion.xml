@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<menuitem name="aplicaciones" id="menu_aplicaciones" action="tech_aplicaciones_action" parent="menu_inicio" sequence="17"/>
 <odoo>
     <data>
-        <act_window id="tech_aplicaciones_action" name="aplicaciones"
-                     res_model="tech.aplicaciones" />
-
-         <menuitem name="aplicaciones" id="menu_aplicaciones" action="tech_aplicaciones_action" parent="menu_inicio" sequence="17"/>
+        <act_window id="tech_aplicaciones_action" name="aplicaciones" res_model="tech.aplicaciones" />
 
 
         <record id="tech_aplicaciones_view_tree" model="ir.ui.view">
