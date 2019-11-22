@@ -44,7 +44,7 @@
 
         <record id="tech_moviles_view_search" model="ir.ui.view">
             <field name="name">Busqueda moviles</field>
-            <field name="model">moviles.moviles</field>
+            <field name="model">tech.moviles</field>
             <field name="arch" type="xml">
                 <search>
                     <field name="modelo" />
