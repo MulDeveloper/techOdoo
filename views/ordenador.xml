@@ -25,24 +25,24 @@
 
         <record id="tech_ordenadores_view_form" model="ir.ui.view">
             <field name="name">Formulario de ordenadores</field>
-            <field name="model">guitars.paises</field>
+            <field name="model">tech.ordenadores</field>
             <field name="arch" type="xml">
                 <form>
                     <group>
-                        <field name="codigo" />
-                        <field name="nombre" />
+                        <field name="modelo" />
+                        <field name="marca" />
                     </group>
                 </form>
             </field>
         </record>
 
         <record id="guitars_paises_view_search" model="ir.ui.view">
-            <field name="name">Busqueda amplificadores</field>
-            <field name="model">guitars.paises</field>
+            <field name="name">Busqueda ordenadores</field>
+            <field name="model">tech.ordenadores</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="codigo" />
-                    <field name="nombre" />
+                    <field name="modelo" />
+                    <field name="marca" />
                 </search>
             </field>
         </record>
