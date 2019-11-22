@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<menuitem name="aplicaciones" id="menu_aplicaciones" action="tech_aplicaciones_action" parent="menu_inicio" sequence="17"/>
 <odoo>
     <data>
-        <act_window id="tech_aplicaciones_action" name="aplicaciones" res_model="tech.aplicaciones" />
+        <act_window id="tech_aplicaciones_action" name="apps" res_model="tech.aplicaciones" />
 
+        <menuitem name="aplicaciones" id="menu_aplicaciones" action="tech_aplicaciones_action" parent="menu_inicio" sequence="17"/>
 
         <record id="tech_aplicaciones_view_tree" model="ir.ui.view">
             <field name="name">Lista Aplicaciones</field>
