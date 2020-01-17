@@ -29,7 +29,7 @@
             <field name="arch" type="xml">
                 <form>
                     <header>
-                        <button name="report_servidor_card" type="object" string="Reporte" class="oe_highlight" />
+                        <button name="report_servidor_card" type="action" string="Reporte" class="oe_highlight" />
                     </header>
                     <group>
                         <field name="modelo" />
