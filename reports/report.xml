@@ -5,6 +5,6 @@
         model="tech.servidor"
         string="Report Server"
         report-type="qweb-pdf"
-        name="tech.report_servidor"
-        file="tech.report_servidor"/>
+        name="techOdoo.report_servidor"
+        file="techOdoo.report_servidor"/>
 </odoo>
