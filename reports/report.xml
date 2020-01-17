@@ -6,7 +6,5 @@
         string="Report Server"
         report-type="qweb-pdf"
         name="tech.report_servidor"
-        file="tech.report_servidor"
-        menu="True"
-    />
+        file="tech.report_servidor"/>
 </odoo>
