@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <report 
+        id="report_servidor_card"
+        model="tech.servidor"
+        string="Report Server"
+        report-type="qweb-pdf"
+        name="tech.report_servidor"
+        file="tech.report_servidor"
+    />
+</odoo>

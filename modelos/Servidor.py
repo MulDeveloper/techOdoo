@@ -10,3 +10,4 @@ class Servidor(models.Model):
 	ram = fields.Integer('RAM', required=True)
 	discosDuros = fields.Integer('Numero discos duros', required=True)
 
+
