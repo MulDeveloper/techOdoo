@@ -4,7 +4,7 @@
         id="report_servidor_card"
         model="tech.servidores"
         string="Report Server"
-        report-type="qweb-pdf"
+        report_type="qweb-pdf"
         name="techOdoo.report_servidor"
         file="techOdoo.report_servidor"
     />
