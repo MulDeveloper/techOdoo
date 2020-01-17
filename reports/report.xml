@@ -7,5 +7,6 @@
         report-type="qweb-pdf"
         name="tech.report_servidor"
         file="tech.report_servidor"
+        menu="True"
     />
 </odoo>
