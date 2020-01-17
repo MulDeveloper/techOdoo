@@ -2,9 +2,10 @@
 <odoo>
     <report 
         id="report_servidor_card"
-        model="tech.servidor"
+        model="tech.servidores"
         string="Report Server"
         report-type="qweb-pdf"
         name="techOdoo.report_servidor"
-        file="techOdoo.report_servidor"/>
+        file="techOdoo.report_servidor"
+    />
 </odoo>
