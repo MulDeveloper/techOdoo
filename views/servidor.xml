@@ -28,6 +28,9 @@
             <field name="model">tech.servidores</field>
             <field name="arch" type="xml">
                 <form>
+                    <header>
+                        <button name="report_servidor_card" type="object" string="Reporte" class="oe_highlight" />
+                    </header>
                     <group>
                         <field name="modelo" />
                         <field name="marca" />
