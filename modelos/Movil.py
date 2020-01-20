@@ -8,10 +8,10 @@ class Movil(models.Model):
 	pulgadas = fields.Float('Pulgadas', required=True)
 	precio = fields.Float('Precio', required=True)
 	iva = fields.Float('IVA', required=True)
-	total = fields.Float(string='Total', compute='calucloTotal')
+	total = fields.Float(string='Total', compute='calculoTotal')
 
 
 	@api.one
 	@api.depends('precio', 'cantidad', 'iva')
 	def calculoTotal(self):
-		self.total = self.precio * self.cantidad * self.iva
+		self.total = self.precio * self.cantidad * (self.iva/100)
