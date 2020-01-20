@@ -14,4 +14,5 @@ class Movil(models.Model):
 	@api.one
 	@api.depends('precio', 'cantidad', 'iva')
 	def calculoTotal(self):
-		self.total = self.precio * self.cantidad * (self.iva/100)
+		aux = (self.precio * self.cantidad) 
+		self.total = aux + (aux * (self.iva/100))
