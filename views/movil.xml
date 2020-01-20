@@ -29,9 +29,6 @@
             <field name="model">tech.moviles</field>
             <field name="arch" type="xml">
                 <form>
-                    <header>
-                        <button name="limpia_campos" type="object" string="Limpia todo" class="oe_highlight" />
-                    </header>
                     <group>
                         <field name="cantidad" />
                         <field name="modelo" />
