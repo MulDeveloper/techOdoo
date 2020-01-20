@@ -11,10 +11,13 @@
             <field name="arch" type="xml">
 
                 <tree>
+                    <field name="cantidad" />
                     <field name="modelo" />
                     <field name="marca" />
                     <field name="pulgadas" />
                     <field name="precio" />
+                    <field name="iva" />
+
 
                 </tree>
             </field>
@@ -29,11 +32,12 @@
                         <button name="limpia_campos" type="object" string="Limpia todo" class="oe_highlight" />
                     </header>
                     <group>
+                        <field name="cantidad" />
                         <field name="modelo" />
                         <field name="marca" />
                         <field name="pulgadas" />
                         <field name="precio" />
-
+                        <field name="iva" />
                     </group>
                 </form>
             </field>
@@ -44,10 +48,12 @@
             <field name="model">tech.moviles</field>
             <field name="arch" type="xml">
                 <search>
+                    <field name="cantidad" />
                     <field name="modelo" />
                     <field name="marca" />
                     <field name="pulgadas" />
                     <field name="precio" />
+                    <field name="iva" />
 
                 </search>
             </field>
