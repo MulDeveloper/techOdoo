@@ -17,6 +17,7 @@
                     <field name="pulgadas" />
                     <field name="precio" />
                     <field name="iva" />
+                    <field name="total" />
 
 
                 </tree>
@@ -38,6 +39,7 @@
                         <field name="pulgadas" />
                         <field name="precio" />
                         <field name="iva" />
+                        <field name="total" />
                     </group>
                 </form>
             </field>
@@ -54,6 +56,7 @@
                     <field name="pulgadas" />
                     <field name="precio" />
                     <field name="iva" />
+                    <field name="total" />
 
                 </search>
             </field>
